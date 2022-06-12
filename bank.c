@@ -31,6 +31,7 @@ int main()
     //account accessed
     if(pin != 0 && account_number != 0)
     {
+        printf("Welcome %s %s\n",first_name,last_name);
         while(input != 'q')
         {
             printf("\nWhat would you like to do?\n\nPress\n");
@@ -44,10 +45,10 @@ int main()
                     deposit(account_number);
                     break;
                 case 'w' : 
-                    printf("Withdrawal");
+                    withdraw(account_number);
                     break;
                 case 'v':
-                    printf("View");
+                    viewAmountInBank(account_number);
                     break;
 
             }
